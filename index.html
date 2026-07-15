@@ -43,9 +43,9 @@
                     404px, 920px, 1280px
                     -->
                     <picture>
-                        <source srcset="images/majorca-beach-square-s.jpg" media="(min-width: 1280px)">
+                        <source srcset="images/majorca-beach-square-s.jpg" media="(min-width: 404px)">
                         <source srcset="images/majorca-beach-vertical-m.jpg" media="(max-width: 920px)">
-                        <source srcset="images/majorca-beach-horizontal-l.jpg" media="(max-width: 404px)">
+                        <source srcset="images/majorca-beach-horizontal-l.jpg" media="(max-width: 1280px)">
                         <img src="images/majorca-beach-square-s.jpg" alt="The Majorca Beach shoreline overlooking the water">
                     </picture>
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
@@ -225,23 +225,23 @@
     </main>
     <footer>
         <section id="contact-us">
-            Contact Us <span id="required">(*required)</span>
-            
+            <h2>Contact Us <span id="required">(*required)</span></h2>
+            <form>
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="fName">First Name<span>*</span></label>
+                    <input type="text" id="fName" name="fName" autocomplete="name" required>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="lName">Last Name<span>*</span></label>
+                    <input type="text" id="lName" name="lName" autocomplete="name" required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span>*</span></label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
                 </div>
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
@@ -285,6 +285,7 @@
                     </select>
                 </fieldset>
                 <input>
+            </form>
             
         </section>
         <section id="legal">
