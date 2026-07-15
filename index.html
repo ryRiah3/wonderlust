@@ -246,21 +246,21 @@
                 <fieldset id="preferred-contact">
                 <legend>Preferred Contact Method<span>*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" id="emailOpt" name="contact" value="email" checked>
+                        <label for="emailOpt">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" id="textOpt" name="contact" value="text">
+                        <label for="textOpt">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" id="phoneOpt" name="contact" value="phone">
+                        <label for="phoneOpt">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
+                    <select id="select-destination" required>
                         <option>Choose</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
@@ -275,7 +275,7 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
+                    <select id="select-travel-time" required>
                         <option>Choose</option>
                         <option>Fall</option>
                         <option>Winter</option>
@@ -284,12 +284,11 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <input type="submit" id="submit" value="Submit Form">
             </form>
-            
         </section>
         <section id="legal">
-            Legal
+            <h2>Legal</h2>
             <small>Copyright 2021 Wonderlust</small>
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>
