@@ -101,7 +101,10 @@
                         images/miranda-blake-M.png 920w
                         images/miranda-blake-L.png 1280w
                     -->
-                        <img src="images/miranda-blake-L.png" alt="A photo of Miranda Blake">
+                        <img src="images/miranda-blake-L.png" alt="A photo of Miranda Blake"
+                            srcset="images/miranda-blake-S.png 404w,
+                                    images/miranda-blake-M.png 920w,
+                                    images/miranda-blake-L.png 1280w">
                         <div>
                         <h4>Miranda Blake</h4>
                         <dl>
@@ -118,7 +121,10 @@
                         images/max-winter-M.png 920w
                         images/max-winter-L.png 1280w
                     -->
-                        <img src="images/max-winter-L.png" alt="A photo of Max Winter">
+                        <img src="images/max-winter-L.png" alt="A photo of Max Winter"
+                            srcset="images/max-winter-S.png 404w,
+                                    images/max-winter-M.png 920w,
+                                    images/max-winter-L.png 1280w">
                         <div>
                         <h4>Max Winter</h4>
                         <dl>
@@ -135,7 +141,10 @@
                         images/ines-villegoes-M.png 920w
                         images/ines-villegoes-L.png 1280w 
                     -->
-                        <img src="images/ines-villegoes-L.png" alt="A photo of Ines Villegoes">
+                        <img src="images/ines-villegoes-L.png" alt="A photo of Ines Villegoes"
+                            srcset="images/ines-villegoes-S.png 404w,
+                                    images/ines-villegoes-M.png 920w,
+                                    images/ines-villegoes-L.png 1280w">
                     <div>
                         <h4>Inés Villegoes</h4>
                         <dl>
@@ -152,7 +161,10 @@
                         images/carmen-lorenzo-M.png 920w
                         images/carmen-lorenzo-L.png 1280w
                     -->
-                        <img src="images/carmen-lorenzo-L.png" alt="A photo of Carmen Lorenzo">
+                        <img src="images/carmen-lorenzo-L.png" alt="A photo of Carmen Lorenzo"
+                            srcset="images/carmen-lorenzo-S.png 404w,
+                                    images/carmen-lorenzo-M.png 920w,
+                                    images/carmen-lorenzo-L.png 1280w">
                         <div>
                         <h4>Carmen Lorenzo</h4>
                         <dl>
@@ -261,27 +273,27 @@
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
                     <select id="select-destination" required>
-                        <option>Choose</option>
-                        <option>Barcelona</option>
-                        <option>Granada</option>
-                        <option>Ibiza</option>
-                        <option>Madrid</option>
-                        <option>Majorca</option>
-                        <option>Seville</option>
-                        <option>Tenerife</option>
-                        <option>Valencia</option>
-                        <option>Other</option>
+                        <option value="" selected disabled>Choose</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="granada">Granada</option>
+                        <option value="ibiza">Ibiza</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="majorca">Majorca</option>
+                        <option value="seville">Seville</option>
+                        <option value="tenerife">Tenerife</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="other">Other</option>
                     </select>
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
                     <select id="select-travel-time" required>
-                        <option>Choose</option>
-                        <option>Fall</option>
-                        <option>Winter</option>
-                        <option>Spring</option>
-                        <option>Summer</option>
-                        <option>Flexible</option>
+                        <option value="" selected disabled>Choose</option>
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="flexible">Flexible</option>
                     </select>
                 </fieldset>
                 <input type="submit" id="submit" value="Submit Form">
