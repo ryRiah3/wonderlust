@@ -7,7 +7,11 @@
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
 <body>
-
+    <a class="sr-only" href="#main">Skip to main content</a>
+    <a class="sr-only" href="#plan-your-trip">Skip to plan your trip</a>
+    <a class="sr-only" href="#testimonials">Skip to testimonials</a>
+    <a class="sr-only" href="#about-your-destination">Skip to about your destination</a>
+    <a class="sr-only" href="#contact-us">Skip to contact us</a>    
     <header>
         <h1>Destination Majorca</h1>
         <p>Let Wonderlust Travel help you plan the trip of your dreams!</p>
@@ -27,7 +31,7 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main">
         <article>
             <h2>Majorca</h2>
             <section id="intro">
@@ -104,7 +108,8 @@
                         <img src="images/miranda-blake-L.png" alt="A photo of Miranda Blake"
                             srcset="images/miranda-blake-S.png 404w,
                                     images/miranda-blake-M.png 920w,
-                                    images/miranda-blake-L.png 1280w">
+                                    images/miranda-blake-L.png 1280w"
+                            sizes="100vw">
                         <div>
                         <h4>Miranda Blake</h4>
                         <dl>
@@ -124,7 +129,8 @@
                         <img src="images/max-winter-L.png" alt="A photo of Max Winter"
                             srcset="images/max-winter-S.png 404w,
                                     images/max-winter-M.png 920w,
-                                    images/max-winter-L.png 1280w">
+                                    images/max-winter-L.png 1280w"
+                            sizes="100vw">
                         <div>
                         <h4>Max Winter</h4>
                         <dl>
@@ -144,7 +150,8 @@
                         <img src="images/ines-villegoes-L.png" alt="A photo of Ines Villegoes"
                             srcset="images/ines-villegoes-S.png 404w,
                                     images/ines-villegoes-M.png 920w,
-                                    images/ines-villegoes-L.png 1280w">
+                                    images/ines-villegoes-L.png 1280w"
+                            sizes="100vw">
                     <div>
                         <h4>Inés Villegoes</h4>
                         <dl>
@@ -164,7 +171,8 @@
                         <img src="images/carmen-lorenzo-L.png" alt="A photo of Carmen Lorenzo"
                             srcset="images/carmen-lorenzo-S.png 404w,
                                     images/carmen-lorenzo-M.png 920w,
-                                    images/carmen-lorenzo-L.png 1280w">
+                                    images/carmen-lorenzo-L.png 1280w"
+                            sizes="100vw">
                         <div>
                         <h4>Carmen Lorenzo</h4>
                         <dl>
@@ -272,7 +280,7 @@
                 </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination" required>
+                    <select id="select-destination" name="select-destination" required>
                         <option value="" selected disabled>Choose</option>
                         <option value="barcelona">Barcelona</option>
                         <option value="granada">Granada</option>
@@ -287,7 +295,7 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time" required>
+                    <select id="select-travel-time" name="select-travel-time" required>
                         <option value="" selected disabled>Choose</option>
                         <option value="fall">Fall</option>
                         <option value="winter">Winter</option>
